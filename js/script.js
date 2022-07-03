@@ -1,21 +1,20 @@
 "use strict";
 
-const numberOfFilms = prompt('How much movies you have watched yet?');
-
-const lastMovie = prompt('Name one of the latest watched movies?');
-const lastMovieRate = prompt('Type a last watched movie rating:');
+const numberOfFilms = +prompt('How much movies you have watched yet?');
 
 const personalMovieDB = {
     count: numberOfFilms,
-    movies: {
-        // lastMovie: lastMovieRate,
-    },
+    movies: {},
     actors: {},
     genres: [],
     privat: false
 };
 
-personalMovieDB.movies['' + lastMovie] = lastMovieRate;
+const a = prompt('Name one of the latest watched movies?'),
+      b = prompt('Type a last watched movie rating:');
 
- console.log(personalMovieDB);
+personalMovieDB.movies[a] = b;
 
+console.log(personalMovieDB);
+
+// personalMovieDB.movies['' + lastMovie] = lastMovieRate;
