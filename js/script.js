@@ -29,58 +29,21 @@
 // }
 // console.log(result);
 
-// function firstTask() {
-//     for (let i = 5; i <= 10; i++) {
-//         console.log(i);
-//     } 
-//     return;   
-// }
-// console.log(firstTask());
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes();
+//     else no();
+//   }
+  
+//   ask(
+//     "Do you agree?",
+//     function() { alert("You agreed."); },
+//     function() { alert("You canceled the execution."); }
+//   );
 
-// function secondTask() {
-//     for (let i = 20; i > 9; i--) {
-//         if (i === 13) {
-//             break;
-//         } else {
-//         console.log(i);
-//         }
-//     }
-// }
-// console.log(secondTask());
+//   let ask = (question, yes, no) => (confirm(question)) ? yes() : no();
 
-// function thirdTask() {
-//     for (let i = 2; i < 11; i++) {
-//         if (i % 2 == 0) {
-//             console.log(i);
-//         } else {
-//             continue;
-//         }
-//     }
-// }
-// console.log(thirdTask());
-
-// function thirdTask() {
-//     for (let i = 2; i < 11; i += 2) {
-//         console.log(i);
-//     }
-// }
-// console.log(thirdTask());
-
-
-
-// for (let i = 2; i <= 16; i++) {
-//     if (i % 2 === 0) {
-//         continue;
-//     } else {
-//         console.log(i);
-//     }
-// }
-
-function fourthTask() {
-    let i = 2;
-    while (i % 2 === 1) {
-        console.log(i);
-        i++;
-    }
-}
-console.log(fourthTask());
+//   ask(
+//       'Do you agree?',
+//       () => alert("You agreed."),
+//       () => alert("You canceled the execution.")
+//   );
