@@ -47,3 +47,23 @@
 //       () => alert("You agreed."),
 //       () => alert("You canceled the execution.")
 //   );
+
+// function copyObj(mainObj) {
+//     const createdObj = {};
+
+//     for (const key in mainObj) {     
+//         createdObj[key] = mainObj[key];   
+//     }
+
+//     return createdObj;
+// }
+
+// const numbers = {
+//     a: 2,
+//     b: 'hello',
+//     c: [1, 2, 3]
+// };
+
+// const newObj = copyObj(numbers);
+// console.log(numbers);
+// console.log(newObj);

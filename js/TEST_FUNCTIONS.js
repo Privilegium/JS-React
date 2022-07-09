@@ -133,40 +133,40 @@
 
 // // TEST_9------------------------------------------------------------------------
 
-function fib(length) {
-    let a = [0, 1];
-    for (let i = 1; i <= length; i++) {
-    a.push(a[a.length - 2] + a[a.length - 1]);
-    }
-    return a;
-}
-console.log(fib(13));
+// function fib(length) {
+//     let a = [0, 1];
+//     for (let i = 1; i <= length; i++) {
+//     a.push(a[a.length - 2] + a[a.length - 1]);
+//     }
+//     return a;
+// }
+// console.log(fib(13));
 
-//
+// //
 
-function fib(num) {
-    if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) {
-        return "";
-    }
+// function fib(num) {
+//     if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) {
+//         return "";
+//     }
 
-    let result = '';
-    let first = 0;
-    let second = 1;
+//     let result = '';
+//     let first = 0;
+//     let second = 1;
 
-    for (let i = 0; i < num; i++) {
-        if (i + 1 === num) {
-            result += `${first}`;
-            // Без пробела в конце
-        } else {
-            result += `${first} `;
-        }
+//     for (let i = 0; i < num; i++) {
+//         if (i + 1 === num) {
+//             result += `${first}`;
+//             // Без пробела в конце
+//         } else {
+//             result += `${first} `;
+//         }
 
-        let third = first + second;
-        first = second;
-        second = third;
-    }
+//         let third = first + second;
+//         first = second;
+//         second = third;
+//     }
 
-    return result;
-}
+//     return result;
+// }
 
-fib(5)
+// fib(5);
