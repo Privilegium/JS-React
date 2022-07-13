@@ -30,15 +30,6 @@
 // }
 // console.log(showExperience(personalPlanPeter));
 
-// // function showProgrammingLangs(plan) {
-// //     const {languages, programmingLangs, exp} = personalPlanPeter.skills;
-// //     const {js, php} = programmingLangs;
-    
-// //     if (js == null && php == null) {
-// //         return '';
-// //     }
-// //     return `Язык js изучен на ${js}\nЯзык php изучен на ${php}`;
-// // }
 
 // function showProgrammingLangs(plan) {
 //     let str = ``;
@@ -51,7 +42,7 @@
 //     return str;
 // }
 
-// //TEST_10------------------------------------------------------------------------
+// //TEST_11------------------------------------------------------------------------
 
 // const family = ['Peter', 'Ann', 'Alex', 'Linda'];
 // const a;
@@ -78,7 +69,7 @@
 // }
 // standardizeStrings(favoriteCities);
 
-// //TEST_10------------------------------------------------------------------------
+// //TEST_13------------------------------------------------------------------------
 
 // const someString = 'This is some strange string';
 
@@ -113,3 +104,74 @@
 //     return availableCurrencies;
 // }
 // console.log(availableCurr(allCurrencuies), 'RUB');
+
+// //TEST_13------------------------------------------------------------------------
+
+// const shoppingMallData = {
+//     shops: [
+//         {
+//             width: 10,
+//             length: 5
+//         },
+//         {
+//             width: 15,
+//             length: 7
+//         },
+//         {
+//             width: 20,
+//             length: 5
+//         },
+//         {
+//             width: 8,
+//             length: 10
+//         }
+//     ],
+//     height: 5,
+//     moneyPer1m3: 30,
+//     budget: 50000
+// };
+
+// function isBudgetEnough(data) {
+//     let summaryArea = 0;
+    
+//     // data.shops.forEach(shop => summaryArea += shop.width * shop.length);
+//     for (let value of data.shops) {
+//         summaryArea += value.width * value.length;
+//     }
+    
+//     let summaryCapacity = summaryArea * data.height;
+//     let canIPay = data.budget - (summaryCapacity * data.moneyPer1m3);
+
+//     if (canIPay >= 0) {
+//         return 'Бюджета достаточно';
+//     } else {
+//         return 'Бюджета недостаточно';
+//     }
+// }
+// isBudgetEnough(shoppingMallData);
+
+
+// //TEST_14------------------------------------------------------------------------
+
+// const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
+
+// function sortStudentsByGroups(arr) {    
+//     arr.sort();
+//     const a = [], b = [], c = [], rest = [];
+
+//     for (let i = 0; i < arr.length; i++) {
+//         if (i < 3) {
+//             a.push(arr[i]);
+//         } else if (i < 6) {
+//             b.push(arr[i]);
+//         } else if (i < 9) {
+//             c.push(arr[i]);
+//         } else {
+//             rest.push(arr[i]);
+//         }
+//     }
+    
+//     return [a, b, c, `Оставшиеся студенты: ${rest.length === 0 ? '-' : rest.join(', ')}`];
+// }
+// console.log(sortStudentsByGroups(students));
+

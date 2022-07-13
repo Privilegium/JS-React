@@ -48,6 +48,8 @@
 //       () => alert("You canceled the execution.")
 //   );
 
+
+// MAKING COPY OF AN OBJECT
 // function copyObj(mainObj) {
 //     const createdObj = {};
 
@@ -65,5 +67,7 @@
 // };
 
 // const newObj = copyObj(numbers);
+// newObj.b = 'bye';
 // console.log(numbers);
 // console.log(newObj);
+
